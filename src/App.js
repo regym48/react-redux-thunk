@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from "react";
+import Judul from "./component/judul";
+import store from './store/store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <h1 style={{textAlignVertical: "center",textAlign: "center",}}>Tampilan Redux</h1>
+        <Judul store={store}/>
+      </div>
+    )
+  }
 }
 
 export default App;
