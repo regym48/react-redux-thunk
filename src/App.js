@@ -6,7 +6,7 @@ class App extends Component{
   render(){
     return(
       <div>
-        <h1 style={{textAlignVertical: "center",textAlign: "center",}}>Tampilan Redux</h1>
+        <h1 style={{textAlignVertical: "center",textAlign: "center"}}>Tampilan Redux</h1>
         <Judul store={store}/>
       </div>
     )
